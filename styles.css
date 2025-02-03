@@ -1,0 +1,360 @@
+/* Base Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    font-family: 'Kamerik 205', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Font Family Declarations */
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Thin\ Oblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Light\ Oblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Book\ Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Bold\ Oblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Heavy\ Oblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Header */
+.header {
+    background: #ffffff;
+    color: #000000;
+    padding: 1rem 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_links li a {
+    color: #2e2e2e;
+    transition: 0.5s;
+}
+
+.nav_links li a:hover {
+    color: #050505;
+}
+
+/* Promotion Section */
+
+.promotion_bar {
+    background: #f5f5f7;
+    color: #000000;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.promotion_bar a {
+    color: #0071E3;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 0rem 0rem;
+    background: #ffffff;
+}
+
+.watch_series_10_logo {
+    width: 150px;
+    margin-bottom: 0rem;
+}
+
+.hero_title {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(180deg, #020201, #020201 46%, #6A6769 69%, #6A6769);
+    background-clip: text;
+    --webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+.hero_subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.hero_cta {
+    background: #0071E3;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.hero_image {
+    width: 100%;
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+.hero_image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.2);
+}
+
+/* Hightlights Slider section */
+.slider_section {
+    width: 100%;
+    padding-top: 8rem;
+    background-color: #f5f5f7;
+}
+
+.slider_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.slider_header h2 {
+    margin: 0 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.watch_film {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0;
+    text-align: right;
+}
+
+.slider_container {
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 20px;
+}
+
+.slide_text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.slider_controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dots span {
+    width: 8px;
+    height: 8px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dots .active {
+    background: black;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+}
+
+/* Responsive Design */
+
+
+@media (max-width: 768px) {
+    .slide {
+        height: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero_title {
+        font-size: 4rem;
+    }
+
+    .hero_subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
