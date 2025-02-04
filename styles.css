@@ -267,9 +267,17 @@ a {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 0;
     width: 100%;
-    transform: translateY(-50%);
+    height: 100%;
+}
+
+button.prev {
+    margin-left: 20px;
+}
+
+button.next {
+    margin-right: 20px;
 }
 
 button {
@@ -286,27 +294,85 @@ button:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.dots {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 5px;
+/* monumental_display */
+
+.monumental_display {
+    padding: 4rem 0;
+    background: #ffffff;
+    text-align: center;
 }
 
-.dots span {
-    width: 8px;
-    height: 8px;
-    background: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
+.monumental_display h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
-.dots .active {
-    background: black;
+.monumental_display p {
+    width: 55%;
+    font-weight: bold;
+    margin: 0 auto;
+    color: #86868B;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
 }
 
+.monumental_display img {
+    width: 100%;
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+/* sleek form */
+
+.sleek_form {
+    padding: 4rem 0 0;
+    background: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.sleek_form h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.sleek_form img {
+    width: 100%;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.sleek_form p {
+    width: 40%;
+    font-weight: bold;
+    margin: 0 auto;
+    color: #86868B;
+    font-size: 1.2rem;
+    position: relative;  
+    z-index: 1; 
+    top: 400px; 
+    border-radius: 10px;
+}
+.sleek_form p span{
+    color: black;
+}
+
+/* largest secreen */
+
+.largest_secreen p{
+    width: 65%;
+    font-weight: bold;
+    margin: 0 auto;
+    color: #86868B;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.largest_secreen p span{
+    color: #000;
+}
 
 /* Footer */
 .footer {
